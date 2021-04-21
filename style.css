@@ -1,0 +1,29 @@
+body {
+    overflow: hidden;
+}
+
+.text-animation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    font-family: "Raleway", sans-serif;
+    color: blue;
+    font-size: 25px;
+}
+
+.text-animation span {
+    position: relative;
+    opacity: 0;
+    animation: textAnimation 15s  forwards;
+
+}
+
+@keyframes textAnimation {
+    to {
+        top: 0;
+        left: 0;
+        opacity: 1;
+    }
+}
